@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//輾轉相除法球最大公因數
+//輾轉相除法求最大公因數
 int main(){
     int a, b;
     cin >> a >> b;

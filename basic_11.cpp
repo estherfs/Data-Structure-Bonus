@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 using namespace std;
 //transpose a matrix
