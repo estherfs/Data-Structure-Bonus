@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 //f(n) = n+1, when n=0,1
 //f(n) = f(n-1)+f(floor(n/2)), when n>1
 
@@ -13,8 +12,8 @@ int f(int n){
 }
 int main(){
     int n;
-    cin >> n;
-    cout << f(n) << endl;
+    scanf("%d", &n);
+    printf("%d\n", f(n));
 
     return 0;
 }

@@ -1,11 +1,11 @@
-#include <iostream>
-#include <cstring>
-using namespace std;
+#include <stdio.h>
+#include <string.h>
+
 int main(){
     char ans[5];
-    cin >> ans;
+    scanf("%s", ans);
     char guess[5];
-    cin >> guess;
+    scanf("%s", guess);
     int num1[10] = {0};
     for (int i = 0; i < 4; i++){
         num1[ans[i] - '0']++;
@@ -29,8 +29,8 @@ int main(){
             }
         }
 
-        cout << a << "A" << b << "B" << endl;
-        cin >> guess;
+        printf("%dA%dB\n", a, b);
+        scanf("%s", guess);
     }
 
     return 0;

@@ -1,9 +1,8 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 //輾轉相除法求最大公因數
 int main(){
     int a, b;
-    cin >> a >> b;
+    scanf("%d %d", &a, &b);
     while(a!=0 && b!=0){
         if(a>b){
             a = a % b;
@@ -13,10 +12,10 @@ int main(){
         }
     }
     if(a==0){
-        cout << b << endl;
+        printf("%d\n", b);
     }
     else{
-        cout << a << endl;
+        printf("%d\n", a);
     }
 
     return 0;

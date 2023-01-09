@@ -1,13 +1,12 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 //transpose a matrix
 int main(){
     int row, col;
-    while(cin >> row >> col){
+    while(scanf("%d %d", &row, &col)!=EOF){
         int matrix[row][col];
         for(int i = 0; i < row; i++){
             for (int j = 0; j < col; j++){
-                cin >> matrix[i][j];
+                scanf("%d", &matrix[i][j]);
             }
         }
 
@@ -21,9 +20,9 @@ int main(){
         for(int i = 0; i < col; i++){
             for(int j = 0; j < row; j++){
                 if(j != row-1)
-                    cout<< matrix2[i][j] << " ";
+                    printf("%d ", matrix2[i][j]);
                 else
-                    cout<< matrix2[i][j] << endl;
+                    printf("%d\n", matrix2[i][j]);
             }
         }
     }

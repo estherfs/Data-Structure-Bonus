@@ -1,10 +1,9 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 int main(){
     int arr[9] = {0};
     int num;
     int flag = 0;
-    cin >> num;
+    scanf("%d", &num);
     if(num == -128){
         arr[7] = 1;
     }
@@ -39,9 +38,9 @@ int main(){
         }
     }
     for (int i = 7; i >= 0; i--){
-        cout << arr[i];
+        printf("%d", arr[i]);
     }
-    cout << endl;
+    printf("\n");
 
     return 0;
 }

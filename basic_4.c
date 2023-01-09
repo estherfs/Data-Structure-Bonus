@@ -1,8 +1,9 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 int main(){
     int hr1, min1, hr2, min2, hr, min;
-    cin >> hr1 >> min1 >> hr2 >> min2;
+    scanf("%d %d", &hr1, &min1);
+    scanf("%d %d", &hr2, &min2);
+
     int fee = 0;
     if(min2 >= min1){
         min = min2 - min1;
@@ -24,7 +25,7 @@ int main(){
     if(min <= 120){
         fee += (min / 30) * 30;
     }
-    cout << fee << endl;
+    printf("%d\n", fee);
 
     return 0;
 }

@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 /*最大派車數*/
 int main(){
     int n;
@@ -9,9 +8,9 @@ int main(){
     for (int i = 0; i < 25; i++)
         time[i] = 0;
 
-    cin >> n;
+    scanf("%d", &n);
     for (int i = 0; i < n; i++){
-        cin >> start[i] >> end[i];
+        scanf("%d %d", &start[i], &end[i]);
         for (int j = start[i]; j < end[i]; j++){
             time[j]++;
         }
@@ -22,7 +21,7 @@ int main(){
         if(max<time[i])
             max = time[i];
     }
-    cout << max << endl;
+    printf("%d\n", max);
 
     return 0;
 }

@@ -1,44 +1,43 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 int main(){
     int mon, day;
-    cin >> mon >> day;
+    scanf("%d %d", &mon, &day);
     int code = mon * 100 + day;
     if(code >= 121 && code <= 218){
-        cout << "Aquarius" << endl;
+        printf("Aquarius\n");
     }
     else if(code >= 219 && code <= 320){
-        cout << "Pisces" << endl;
+        printf("Pisces\n");
     }
     else if(code >= 321 && code <= 420){
-        cout << "Aries" << endl;
+        printf("Aries\n");
     }
     else if(code >= 421 && code <= 521){
-        cout << "Taurus" << endl;
+        printf("Taurus\n");
     }
     else if(code >= 522 && code <= 621){
-        cout << "Gemini" << endl;
+        printf("Gemini\n");
     }
     else if(code >= 622 && code <= 722){
-        cout << "Cancer" << endl;
+        printf("Cancer\n");
     }
     else if(code >= 723 && code <= 823){
-        cout << "Leo" << endl;
+        printf("Leo\n");
     }
     else if(code >= 824 && code <= 923){
-        cout << "Virgo" << endl;
+        printf("Virgo\n");
     }
     else if(code >= 924 && code <= 1023){
-        cout << "Libra" << endl;
+        printf("Libra\n");
     }
     else if(code >= 1024 && code <= 1122){
-        cout << "Scorpio" << endl;
+        printf("Scorpio\n");
     }
     else if(code >= 1123 && code <= 1221){
-        cout << "Sagittarius" << endl;
+        printf("Sagittarius\n");
     }
     else{
-        cout << "Capricorn" << endl;
+        printf("Capricorn\n");
     }
 
     return 0;
